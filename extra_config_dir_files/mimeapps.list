@@ -1,0 +1,16 @@
+[Default Applications]
+application/octet-stream=code-oss.desktop
+text/plain=code-oss.desktop
+application/zip=org.gnome.FileRoller.desktop
+image/png=org.xfce.ristretto.desktop
+application/json=code-oss.desktop
+application/x-shellscript=code-oss.desktop
+video/mp4=vlc.desktop
+
+[Added Associations]
+application/octet-stream=code-oss.desktop;
+text/plain=code-oss.desktop;
+application/zip=org.gnome.FileRoller.desktop;
+image/png=org.xfce.ristretto.desktop;
+application/json=code-oss.desktop;
+video/mp4=vlc.desktop;mpv.desktop;
