@@ -1,9 +1,0 @@
-creamlinux-installer-bin
-openrgb-bin
-protonplus
-vicinae-bin
-wlogout
-xwaylandvideobridge
-yay
-yay-debug
-zen-browser-bin
