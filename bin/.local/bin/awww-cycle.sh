@@ -9,7 +9,7 @@ CURRENT_WALLPAPER_FILE="$HOME/.config/hypr/CurrentWallpaper.png"
 while true; do
     img=$(find "$WALLPAPER_DIR" -maxdepth 1 -type f | shuf -n 1)
     [[ "$img" == "$last" ]] && continue
-    swww img "$img" --transition-fps 60 --transition-step 255 --transition-type any
+    awww img "$img" --transition-fps 60 --transition-step 255 --transition-type any
 
     cp "$img" "$CURRENT_WALLPAPER_FILE"
     
