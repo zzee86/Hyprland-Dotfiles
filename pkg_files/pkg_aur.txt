@@ -1,6 +1,8 @@
 creamlinux-installer-bin
+ludusavi
 openrgb-bin
 protonplus
+sourcegit
 vicinae-bin
 wlogout
 xwaylandvideobridge
