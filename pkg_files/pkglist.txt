@@ -60,6 +60,8 @@ pipewire-pulse
 protonplus
 rclone
 ristretto
+sc-controller-git
+sdl-jstest-git
 slurp
 sourcegit
 steam

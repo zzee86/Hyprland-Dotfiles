@@ -2,6 +2,8 @@ creamlinux-installer-bin
 ludusavi
 openrgb-bin
 protonplus
+sc-controller-git
+sdl-jstest-git
 sourcegit
 vicinae-bin
 wlogout
