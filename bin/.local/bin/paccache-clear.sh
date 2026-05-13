@@ -29,7 +29,7 @@ echo
 echo "== Checking for UNINSTALLED AUR packages (preview only) =="
 
 AUR_ORPHANED=$(
-  /usr/bin/paccache -uvvk0 $AUR_CACHE_ARGS |
+  /usr/bin/paccache -duvvk0 $AUR_CACHE_ARGS |
     grep "$AUR_CACHE_DIR" |
     cut -d \' -f2 |
     rev | cut -d / -f2- | rev
