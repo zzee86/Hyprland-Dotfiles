@@ -3,7 +3,7 @@
 * {
     border: none;
     border-radius: 0px;
-    font-family: "Adwaita Sans", "JetBrainsMono Nerd Fonnt Propo", sans-serif;
+    font-family: "Adwaita Sans", "JetBrainsMono Nerd Font Propo", sans-serif;
     font-weight: bold;
 
     min-height: 0;
@@ -38,7 +38,7 @@ tooltip {
 #workspaces button {
     padding: 0px 6px;
     margin: 0px 3px;
-    border-radius: 45px;
+   border-radius: 45px;
     color: transparent;
     background-color: @bg1;
     transition: all 0.3s ease-in-out;
