@@ -43,6 +43,9 @@ if [ -n "$AUR_ORPHANED" ]; then
   echo
   echo "Removing orphaned AUR build directories..."
   rm -rvf $AUR_ORPHANED
+
+  AUR_CACHE_ARGS=$(find "$AUR_CACHE_DIR" \
+  -mindepth 1 -maxdepth 1 -type d -printf "-c %p ")
 else
   echo "No orphaned AUR build directories found."
 fi

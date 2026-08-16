@@ -58,6 +58,7 @@ hl.on("hyprland.start", function()
     hl.exec_cmd(home .. "/.local/bin/awww-cycle.sh")
     hl.exec_cmd("[utility]")
     hl.exec_cmd("swaync")
+    hl.exec_cmd("swayosd-server")
     hl.exec_cmd("awww-daemon")
     hl.exec_cmd(home .. "/.local/bin/gpu-screen-recorder-autostart.sh")
     hl.exec_cmd("vicinae server")
@@ -333,17 +334,9 @@ hl.bind(mainMod .. " + mouse:273", function() hl.dsp.resizewindow() end)
 
 
 -- Laptop multimedia keys for volume and LCD brightness
-hl.bind("XF86AudioRaiseVolume", hl.dsp.exec_cmd("wpctl set-volume -l 1 @DEFAULT_AUDIO_SINK@ 1%+ ; ~/.config/hypr/scripts/volume-notify.sh up"))
-
-hl.bind("XF86AudioLowerVolume", hl.dsp.exec_cmd("wpctl set-volume @DEFAULT_AUDIO_SINK@ 1%- ; ~/.config/hypr/scripts/volume-notify.sh down"))
-
-hl.bind("XF86AudioMute", hl.dsp.exec_cmd("wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle"))
-
-hl.bind("XF86AudioMicMute", hl.dsp.exec_cmd("wpctl set-mute @DEFAULT_AUDIO_SOURCE@ toggle"))
-
-hl.bind("XF86MonBrightnessUp", hl.dsp.exec_cmd("brightnessctl -e4 -n2 set 5%+"))
-
-hl.bind("XF86MonBrightnessDown", hl.dsp.exec_cmd("brightnessctl -e4 -n2 set 5%-"))
+hl.bind("XF86AudioRaiseVolume", hl.dsp.exec_cmd("swayosd-client --output-volume +1"))
+hl.bind("XF86AudioLowerVolume", hl.dsp.exec_cmd("swayosd-client --output-volume -1"))
+hl.bind("XF86AudioMute", hl.dsp.exec_cmd("swayosd-client --output-volume mute-toggle"))
 
 -- Requires playerctl
 hl.bind("XF86AudioNext", hl.dsp.exec_cmd("playerctl next"))
