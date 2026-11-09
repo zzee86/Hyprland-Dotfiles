@@ -20,6 +20,11 @@
 ----------------
 
 --- See https://wiki.hypr.land/Configuring/Monitors/
+hl.config({
+    render = {
+        cm_auto_hdr = 0, 
+    },
+})
 hl.monitor({
     output = "",
     mode = "preferred",
@@ -37,7 +42,7 @@ hl.monitor({
 local terminal = "kitty"
 local fileManager = "thunar"
 local menu = "vicinae"
-local browser = "librewolf"
+local browser = "zen-browser"
 local steam = "steam"
 
 -----------------
@@ -60,6 +65,7 @@ hl.on("hyprland.start", function()
     hl.exec_cmd("swaync")
     hl.exec_cmd("swayosd-server")
     hl.exec_cmd("awww-daemon")
+    hl.exec_cmd("easyeffects --gapplication-service &")
     hl.exec_cmd(home .. "/.local/bin/gpu-screen-recorder-autostart.sh")
     hl.exec_cmd("vicinae server")
     hl.exec_cmd("openrgb --profile blue")

@@ -15,8 +15,10 @@ gpu-screen-recorder \
   -f 60 \
   -r 60 \
   -c mp4 \
-  -a default_output \
-  -a alsa_input.usb-HP__Inc_HyperX_SoloCast-00.HiFi__Mic__source \
+  -a 'app-inverse:LibreWolf|app-inverse:WEBRTC VoiceEngine' \
+  -a 'app:LibreWolf' \
+  -a 'app:WEBRTC VoiceEngine' \
+  -a 'easyeffects_source' \
   -o "$HOME/Videos/replays" \
   -sc "$HOME/.local/bin/application_name.sh" &
 
